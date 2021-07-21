@@ -1,0 +1,21 @@
+li {
+    display: inline-block;
+    padding: 0px 25px;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0%;
+    background: transparent;
+    transition: width .2s ease-in-out, background-color .2s ease;
+}
+li:hover:after {
+    width: 100%;
+    background: black;
+}
